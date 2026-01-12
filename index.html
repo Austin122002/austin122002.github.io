@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <title>Austin Scruggs | About Me</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #758BFD;
+            background-color: #e0f2fe;
+            color: #0f172a;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0284c7;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #0369a1;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        nav {
+            margin-top: 40px;
+        }
+
         nav a {
-            margin: 10px;
-            padding: 10px 15px;
-            background-color: #1f5673;
-            color: black;
+            margin: 8px;
+            padding: 10px 18px;
+            background-color: #0284c7;
+            color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #0369a1;
         }
     </style>
 </head>
+
 <body>
+    <div class="container">
 
-<h1>Hi, I'm Austin</h1>
-<p>I am an IT major interested in cybersecurity.</p>
+        <!-- Profile Picture -->
+        <img src="profile.png" alt="Picture of Austin Scruggs" class="profile-pic">
 
-<h2>Skills</h2>
-<p>Networking, Python, SQL, Security Fundamentals</p>
+        <!-- Name & Intro -->
+        <h1>Austin Scruggs</h1>
+        <p>
+            I am a senior Information Technology major at Oakland University with a strong
+            interest in cybersecurity. I enjoy learning about system security, networking,
+            and defensive security practices.
+        </p>
 
-<h2>Skills I Want to Learn</h2>
-<p>Penetration Testing, Cloud Security, Incident Response</p>
+        <!-- Skills -->
+        <h2>Skills</h2>
+        <p>
+            Networking • Python • SQL • Linux • GitHub • Security Fundamentals
+        </p>
 
-<nav>
-    <a href="index.html">About</a>
-    <a href="courseProject.html">Course Project</a>
-    <a href="hobbies.html">Hobbies</a>
-</nav>
+        <!-- Skills to Learn -->
+        <h2>Skills I Want to Learn</h2>
+        <p>
+            Penetration Testing • Cloud Security • Incident Response • Threat Analysis
+        </p>
 
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="courseProject.html">Course Project</a>
+            <a href="hobbies.html">Hobbies</a>
+        </nav>
+
+    </div>
 </body>
 </html>
+📸 IMPORTANT (don’t skip this)
+Make sure you upload your picture to the repo:
+
+Copy code
+profile.jpg
+If your image is named something else, update this line:
+
+html
+Copy code
+<img src="profile.png" ...>
