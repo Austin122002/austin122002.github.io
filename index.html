@@ -10,15 +10,29 @@
       font-family: Arial, sans-serif;
       background-color: #e0f2fe;
       color: #0f172a;
-      text-align: center;
       margin: 0;
       padding: 0;
     }
+
     .container {
-      max-width: 700px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 50px 30px;
     }
+
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .header-text {
+      flex: 2;
+      text-align: left;
+    }
+
     .profile-pic {
       width: 180px;
       height: 180px;
@@ -26,12 +40,36 @@
       object-fit: cover;
       border: 4px solid #0284c7;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
     }
-    h1 { margin-bottom: 8px; }
-    h2 { margin-top: 28px; color: #0369a1; }
-    p { line-height: 1.6; }
-    nav { margin-top: 35px; }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 35px;
+      color: #0369a1;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .contact a {
+      color: #0369a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-top: 40px;
+      text-align: center;
+    }
+
     nav a {
       display: inline-block;
       margin: 8px;
@@ -42,21 +80,48 @@
       border-radius: 8px;
       font-weight: bold;
     }
-    nav a:hover { background-color: #0369a1; }
+
+    nav a:hover {
+      background-color: #0369a1;
+    }
+
+    
+    @media (max-width: 700px) {
+      .header {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <img src="profile.png?v=3" alt="Picture of Austin Scruggs" class="profile-pic" />
 
-    <h1>Austin Scruggs</h1>
+  
+    <div class="header">
+      <div class="header-text">
+        <h1>Austin Scruggs</h1>
 
-    <p>
-      Email: <a href="mailto:austinscruggs@oakland.edu">austinscruggs@oakland.edu</a> |
-      LinkedIn: <a href="https://www.linkedin.com/in/austin-scruggs-920a70244/" target="_blank">View Profile</a>
-    </p>
+        <p class="contact">
+          Email:
+          <a href="mailto:austinscruggs@oakland.edu">austinscruggs@oakland.edu</a>
+          <br />
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/austin-scruggs-920a70244/" target="_blank">
+            www.linkedin.com/in/austin-scruggs-920a70244
+          </a>
+        </p>
+      </div>
 
+      <img src="profile.png?v=6" alt="Picture of Austin Scruggs" class="profile-pic" />
+    </div>
+
+   
     <h2>Career Focus: Information Technology</h2>
     <p>
       I am a senior Information Technology major at Oakland University with a strong
@@ -64,17 +129,21 @@
       and defensive security practices.
     </p>
 
+    
     <h2>Skills</h2>
     <p>Networking • Python • SQL • Linux • GitHub • Security Fundamentals</p>
 
+    
     <h2>Skills I Want to Learn</h2>
     <p>Penetration Testing • Cloud Security • Incident Response • Threat Analysis</p>
 
+    
     <nav>
       <a href="index.html">About Me</a>
       <a href="courseProject.html">Course Project</a>
       <a href="hobbies.html">Hobbies</a>
     </nav>
+
   </div>
 </body>
 </html>
