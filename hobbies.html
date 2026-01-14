@@ -30,13 +30,31 @@
       color: #1f5673;
     }
 
+    h3 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+
     p {
       line-height: 1.6;
     }
 
-    ul {
-      line-height: 1.8;
-      margin-top: 10px;
+    
+    .hobby {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 25px;
+    }
+
+    .hobby-text {
+      flex: 2;
+    }
+
+    .hobby img {
+      width: 180px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     nav {
@@ -58,6 +76,14 @@
     nav a:hover {
       background-color: #163d52;
     }
+
+   
+    @media (max-width: 700px) {
+      .hobby {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
@@ -67,25 +93,67 @@
     <h1>Hobbies & Interests</h1>
 
     <h2>What I Like to Do</h2>
-    <p>
-      In my free time, I enjoy playing video games, spending time with friends and family,
-      and watching movies.
-    </p>
 
-    <h2>Tech Interests</h2>
-    <p>
-      I also like working on personal tech projects and staying up to date with cybersecurity
-      news and trends.
-    </p>
+    
+    <div class="hobby">
+      <div class="hobby-text">
+        <h3>Video Games</h3>
+        <p>
+          I love playing video games, especially FPS games. Gaming is one of my
+          favorite ways to relax and stay connected with friends.
+        </p>
+      </div>
+      <img src="halomcc.png" alt="Halo Master Chief Collection">
+    </div>
 
-    <h2>Quick List</h2>
-    <ul>
-      <li>Video games</li>
-      <li>Movies</li>
-      <li>Spending time with friends & family</li>
-      <li>Personal tech projects</li>
-      <li>Cybersecurity news</li>
-    </ul>
+    
+    <div class="hobby">
+      <div class="hobby-text">
+        <h3>Movies & TV Shows</h3>
+        <p>
+          Whenever I have the time, I enjoy watching movies and TV shows.
+          My favorite movie is <em>Spider-Man: Across the Spider-Verse</em>.
+        </p>
+      </div>
+      <img src="atsv.png" alt="Spider-Man Across the Spider-Verse">
+    </div>
+
+   
+    <div class="hobby">
+      <div class="hobby-text">
+        <h3>Spending Time with Friends & Family</h3>
+        <p>
+          I value spending quality time with friends and family, whether it’s
+          hanging out, playing games, or just catching up.
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="hobby">
+      <div class="hobby-text">
+        <h3>Card Games</h3>
+        <p>
+          I recently got into card games over the past couple of years.
+          My favorite games are spades and rummy, and I’m currently
+          learning how to play bid whist.
+        </p>
+      </div>
+      <img src="cards.png" alt="Playing cards">
+    </div>
+
+    
+    <div class="hobby">
+      <div class="hobby-text">
+        <h3>Music</h3>
+        <p>
+          My favorite music genres are instrumental, gospel, and R&amp;B.
+          I mostly listen to R&amp;B, especially 80’s and 90’s R&amp;B —
+          I’m definitely an old soul.
+        </p>
+      </div>
+      <img src="music.png" alt="Music genres">
+    </div>
 
     <nav>
       <a href="index.html">About Me</a>
@@ -96,4 +164,3 @@
   </div>
 </body>
 </html>
-
