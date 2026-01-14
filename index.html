@@ -20,12 +20,13 @@
       padding: 50px 30px;
     }
 
-    
+    /* Top section layout (text left, image right) */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 40px;
+      margin-bottom: 10px;
     }
 
     .header-text {
@@ -43,7 +44,7 @@
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin: 0 0 10px 0;
     }
 
     h2 {
@@ -51,8 +52,16 @@
       color: #0369a1;
     }
 
+    h3 {
+      margin-top: 22px;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
     p {
       line-height: 1.6;
+      margin-top: 8px;
+      margin-bottom: 12px;
     }
 
     .contact a {
@@ -63,6 +72,12 @@
 
     .contact a:hover {
       text-decoration: underline;
+    }
+
+    ul {
+      line-height: 1.7;
+      margin-top: 8px;
+      margin-bottom: 22px;
     }
 
     nav {
@@ -85,7 +100,7 @@
       background-color: #0369a1;
     }
 
-    
+    /* Mobile-friendly */
     @media (max-width: 700px) {
       .header {
         flex-direction: column-reverse;
@@ -102,7 +117,6 @@
 <body>
   <div class="container">
 
-  
     <div class="header">
       <div class="header-text">
         <h1>Austin Scruggs</h1>
@@ -112,16 +126,15 @@
           <a href="mailto:austinscruggs@oakland.edu">austinscruggs@oakland.edu</a>
           <br />
           LinkedIn:
-          <a href="https://www.linkedin.com/in/austin-scruggs-920a70244/" target="_blank">
+          <a href="https://www.linkedin.com/in/austin-scruggs-920a70244/" target="_blank" rel="noopener">
             www.linkedin.com/in/austin-scruggs-920a70244
           </a>
         </p>
       </div>
 
-      <img src="profile.png?v=6" alt="Picture of Austin Scruggs" class="profile-pic" />
+      <img src="profile.png?v=7" alt="Picture of Austin Scruggs" class="profile-pic" />
     </div>
 
-   
     <h2>Career Focus: Information Technology</h2>
     <p>
       I am a senior Information Technology major at Oakland University with a strong
@@ -129,15 +142,55 @@
       and defensive security practices.
     </p>
 
-    
+    <h2>Education</h2>
+    <p>
+      <strong>Bachelor of Science in Information Technology</strong> — GPA: 3.43<br />
+      Oakland University, Rochester Hills, MI<br />
+      <em>Expected Graduation: May 2026</em>
+    </p>
+
     <h2>Skills</h2>
-    <p>Networking • Python • SQL • Linux • GitHub • Security Fundamentals</p>
+    <p>I have experience with Python, Java, Alteryx Designer</p>
 
-    
-    <h2>Skills I Want to Learn</h2>
-    <p>Penetration Testing • Cloud Security • Incident Response • Threat Analysis</p>
+    <h2>Skills I want to learn</h2>
+    <p>Penetration Testing (Red Team), Cloud Security, Incident Response, Threat Analysis, C++</p>
 
-    
+    <h2>Experience Related to Field</h2>
+
+    <h3>Comerica Bank | SOC Analyst</h3>
+    <p><em>May 2025 – August 2025</em></p>
+    <ul>
+      <li>Investigated and resolved phishing tickets while collaborating across all SOC tiers.</li>
+      <li>Analyzed and responded to security alerts received through the SOC mailbox.</li>
+      <li>Developed and integrated SOC templates for application-based systems uploaded into ServiceNow.</li>
+    </ul>
+
+    <h3>Comerica Bank | Data Protection Engineer</h3>
+    <p><em>May 2024 – August 2024</em></p>
+    <ul>
+      <li>Tested Print Blocking for the Data Protection Team to identify vulnerabilities and security gaps.</li>
+      <li>Utilized Endpoint Protector to review policies and Data Loss Prevention events in report logs.</li>
+      <li>Collaborated with leadership to create Test Plan documents improving Print Blocking procedures.</li>
+    </ul>
+
+    <h3>Oakland University | SECS Outreach Student Assistant</h3>
+    <p><em>May 2023 – April 2024</em></p>
+    <ul>
+      <li>Led Computer Science and IT-based instructional modules during summer camps.</li>
+      <li>Taught foundational IT concepts including Python, HTML, and JavaScript.</li>
+      <li>Provided instruction in binary numbers and Scratch coding.</li>
+    </ul>
+
+    <h3>DTE Energy | Data Analyst</h3>
+    <p><em>May 2022 – August 2022</em></p>
+    <ul>
+      <li>Analyzed customer service call data to identify trends and insights.</li>
+      <li>Utilized Alteryx Designer to filter datasets and extract relevant results.</li>
+      <li>Contributed to a Speech Analytics project using analyzed call data.</li>
+      <li>Obtained Alteryx Designer Core certification.</li>
+      <li>Leveraged Power BI for data visualization and reporting.</li>
+    </ul>
+
     <nav>
       <a href="index.html">About Me</a>
       <a href="courseProject.html">Course Project</a>
@@ -147,3 +200,4 @@
   </div>
 </body>
 </html>
+
